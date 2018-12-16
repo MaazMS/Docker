@@ -1,0 +1,88 @@
+$ sudo snap install --edge docker
+$ snap list
+$ docker version
+$ ls -l /var/run/docker.sock
+$ sudo chmod 666 /var/run/docker.sock
+$ ls -l /var/run/docker.sock
+$ docker run hello-world
+
+maazil@maazil-VirtualBox:~$ sudo snap install --edge docker
+[sudo] password for maazil: 
+docker (edge) 17.03.1-ce-1 from Canonical* installed
+maazil@maazil-VirtualBox:~$ snap list
+Name                  Version         Rev   Tracking  Publisher   Notes
+core                  16-2.36.2       6034  stable    canonical*  core
+docker                17.03.1-ce-1    333   edge      canonical*  -
+gnome-3-26-1604       3.26.0          74    stable/…  canonical*  -
+gnome-calculator      3.30.1          260   stable/…  canonical*  -
+gnome-characters      3.30.0          139   stable/…  canonical*  -
+gnome-logs            3.30.0          45    stable/…  canonical*  -
+gnome-system-monitor  3.30.0          57    stable/…  canonical*  -
+gtk-common-themes     0.1-4-g88bc1b2  818   stable/…  canonical*  -
+maazil@maazil-VirtualBox:~$ docker version
+Client:
+ Version:           18.09.0
+ API version:       1.39
+ Go version:        go1.10.4
+ Git commit:        4d60db4
+ Built:             Wed Nov  7 00:49:01 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/version: dial unix /var/run/docker.sock: connect: permission denied
+maazil@maazil-VirtualBox:~$ sudo docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+d1725b59e92d: Pull complete 
+Digest: sha256:0add3ace90ecb4adbf7777e9aacf18357296e799f81cabc9fde470971e499788
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+maazil@maazil-VirtualBox:~$ ls -l /var/run/docker.sock
+srw-rw---- 1 root docker 0 Dec 16 21:51 /var/run/docker.sock
+maazil@maazil-VirtualBox:~$ sudo chmod 666 /var/run/docker.sock
+maazil@maazil-VirtualBox:~$ ls -l /var/run/docker.sock
+srw-rw-rw- 1 root docker 0 Dec 16 21:51 /var/run/docker.sock
+maazil@maazil-VirtualBox:~$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+maazil@maazil-VirtualBox:~$ 
