@@ -84,7 +84,7 @@ it is not able to read any input from you it doesn't have terminal to read input
    1. open browser within docker host and `http://ip:port`    
    1. outside docker host we can not access it.   
 1. second use IP of docker host and map port inside docker container to a free port on docker host.  
-    1. To map port docker container port to localhost port using `-p` paramater. 
+    1. To map port docker container port to localhost port using `-p` parameter. 
     1. `docker run -p 80:5000  kodekloud/webapp`  
     1. here port 80 is localhost port and port 5000 is docker container port.  
     1. We can not map to same port on docker host more than once.   
@@ -92,4 +92,24 @@ it is not able to read any input from you it doesn't have terminal to read input
 ## RUN - Volume mapping
 1. How data persistence on docker
 1. Docker has its own isolated file system.  
-1. if container is remove all data is loss in file system.  
+1. if container is remove and stop all data is loss in file system.  
+1. `docker stop image_name` and `docker rm image_name`   
+1. if you want to persistence the data then map a directory outside the container on docker host to a directory inside the  
+   container .  
+1. docker container mysql data store on `/var/lib/mysql` to docker host `/opt/datadir` using `-v` parameter.    
+1. `docker run -v /opt/datadir:/var/lib/mysql mysql`.   
+
+## container full information  
+1. `docker ps ` show information of docker information.   
+1.  `docker inspect image_name`   
+
+## how to check docker logs  
+1. docker logs image_name    
+
+## ENV variable in docker  
+1. set environment variable
+1. `docker run -e variable=vaalue image_name`     
+1. multiple environment variable.   
+1. `docker run -e variable=vaalue  variable=vaalue variable=vaalue image_name`    
+
+
