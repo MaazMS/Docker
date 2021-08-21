@@ -1,5 +1,7 @@
-## Introduction  
-1.  why we need docker ?  
+## Introduction    
+1. What is docker?  
+    Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
+3.  why we need docker ?  
 Example   
     Requirement to setup end-to-end an applicattion with different technology like web server using nodejs, database mongoDB  
     messages system radis and orchestration ansible.  
