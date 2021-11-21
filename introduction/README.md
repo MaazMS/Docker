@@ -32,7 +32,8 @@ within seprate enviroment or container.
    
 1. containeruze applications run seach services with its own dependency in seprate containers 
 
-1. What are Containers?  
+1. What are Containers?    
+    1. A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.   
     1. conatiner are compalty islolated environment can have own process , network interface,  mounts all share same os kernal.  
     1. Docker utilize LXC container.  
     1.  os kernal is reponsible to interaction underlying hardware.  
