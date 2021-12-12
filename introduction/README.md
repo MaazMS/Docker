@@ -1,6 +1,9 @@
 ## Introduction    
 1. What is docker?  
-    Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
+    Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.    
+    Docker is an open source containerization platform.       
+    Developers can create containers without Docker, but the platform makes it easier, simpler, and safer to build, deploy run, update, and stop containers and manage containers.       
+    
 3.  why we need docker ?  
 Example   
     Requirement to setup end-to-end an applicattion with different technology like web server using nodejs, database mongoDB  
