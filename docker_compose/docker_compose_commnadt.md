@@ -8,4 +8,10 @@
 1. docker-compose -f file_name up  -d 
 
 # How to stop docker compose
-1. docker-compose down 
+1. docker-compose down  
+
+# Restart docker compose 
+1. docker-compose restar  
+
+# View the docker compose logs 
+1. docker-compose logs 
