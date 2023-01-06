@@ -15,3 +15,6 @@
 
 # View the docker compose logs 
 1. docker-compose logs 
+
+# view the docker compose logs live 
+1. docker-compose logs  --follow
