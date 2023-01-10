@@ -24,5 +24,10 @@
     1. using internal IP but it is not sure that when system is reboot IP get changed.   
     1. mysql.connect(container_name).  
     1. Docker has built-in DNS server.  
-    1. It resolves DNS using container name.
+    1. It resolves DNS using container name.   
+
+
+## view list of network 
+1. docker network ls 
+
     
