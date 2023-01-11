@@ -31,3 +31,5 @@
 1. docker network ls 
 
     
+## remove network 
+1. docker network rm network_name
