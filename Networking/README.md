@@ -32,4 +32,7 @@
 
     
 ## remove network 
-1. docker network rm network_name
+1. docker network rm network_name   
+
+## How to find-our running docker container network name 
+1. docker inspect container_name | grep NetworkMode 
