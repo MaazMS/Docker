@@ -35,4 +35,7 @@
 1. docker network rm network_name   
 
 ## How to find-our running docker container network name 
-1. docker inspect container_name | grep NetworkMode 
+1. docker inspect container_name | grep NetworkMode   
+
+## How to override network name  
+1. docker-compose -p network_name up -d 
