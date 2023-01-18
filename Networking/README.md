@@ -38,4 +38,7 @@
 1. docker inspect container_name | grep NetworkMode   
 
 ## How to override network name  
-1. docker-compose -p network_name up -d 
+1. docker-compose -p network_name up -d   
+
+## How to create network 
+1. docker network create network_name
