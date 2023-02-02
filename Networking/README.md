@@ -41,4 +41,7 @@
 1. docker-compose -p network_name up -d   
 
 ## How to create network 
-1. docker network create network_name
+1. docker network create network_name 
+
+## How to disconnect container from network 
+1. docker network disconnect network_name container_name
