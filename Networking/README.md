@@ -45,3 +45,6 @@
 
 ## How to disconnect container from network 
 1. docker network disconnect network_name container_name
+
+## How to connect container from network 
+1. docker network connect network_name container_name
